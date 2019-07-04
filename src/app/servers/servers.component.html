@@ -4,5 +4,6 @@
 <p>Server Creation Status: {{serverCreationStatus}}</p>
 <app-server></app-server>
 <label>Server name</label>
-<input (input)="onUpdateServer($event)" class="form-control" type='text'>
+<!--<input (input)="onUpdateServer($event)" class="form-control" type='text'>-->
+<input [(ngModel)]="serverName" class="form-control" type='text'>
 <p>{{serverName}}</p>

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   // selector: '[app-servers]',
@@ -9,7 +10,7 @@ import {Component, OnInit} from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNewServers = false;
   serverCreationStatus = 'No Server Created';
-  serverName = '';
+  serverName = 'testServer';
 
   constructor() {
     setTimeout(() => {
