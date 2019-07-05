@@ -1,7 +1,8 @@
 <button class="btn btn-primary" [disabled]="!allowNewServers" (click)="onCreateServer()">Add Server</button>
 <p>Allow new servers: {{allowNewServers}}</p>
 <p [innerText]="allowNewServers"></p>
-<p>Server Creation Status: {{serverCreationStatus}}</p>
+<!--<p>Server Creation Status: {{serverCreationStatus}} </p>-->
+<p *ngIf="serverCreated"> Server was created. The server name is {{serverName}}</p>
 <app-server></app-server>
 <label>Server name</label>
 <!--<input (input)="onUpdateServer($event)" class="form-control" type='text'>-->
